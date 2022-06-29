@@ -1,0 +1,32 @@
+{
+  "display": {
+    "title": {
+      "text": "Rock Bottom",
+      "color": "dark_purple"
+    },
+    "description": {
+      "text": "Go to the bottom of the world"
+    },
+    "icon": {
+      "item": "minecraft:bedrock"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "bottom": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "position": {
+          "y": {
+            "min": -65,
+            "max": -60
+          }
+        }
+      }
+    }
+  },
+  "parent": "achievable:root"
+}

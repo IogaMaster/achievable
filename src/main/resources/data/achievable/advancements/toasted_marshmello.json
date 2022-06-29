@@ -1,34 +1,41 @@
 {
   "display": {
     "title": {
-      "text": "Whats that sound...?",
-      "color": "green"
+      "text": "Toasted Marshmello",
+      "color": "dark_purple"
     },
     "description": {
-      "text": "Have a creeper sneak up on you"
+      "text": "Kill a ghast with a trident"
     },
     "icon": {
-      "item": "minecraft:creeper_head"
+      "item": "minecraft:ghast_tear"
     },
-    "frame": "task",
+    "frame": "challenge",
     "show_toast": true,
     "announce_to_chat": true,
     "hidden": false
   },
   "criteria": {
-    "creeper hurts player": {
-      "trigger": "minecraft:entity_hurt_player",
+    "kill ghast with trident": {
+      "trigger": "minecraft:player_killed_entity",
       "conditions": {
-        "damage": {
+        "entity": {
+          "type": "minecraft:ghast"
+        },
+        "killing_blow": {
+          "is_projectile": true,
+          "direct_entity": {
+            "type": "minecraft:trident"
+          },
           "source_entity": {
-            "type": "minecraft:creeper"
+            "type": "minecraft:player"
           }
         }
       }
     }
   },
   "rewards": {
-    "experience": 10
+    "experience": 99
   },
-  "parent": "achievable:root"
+  "parent": "achievable:a_big_fork"
 }

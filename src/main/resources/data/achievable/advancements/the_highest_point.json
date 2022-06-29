@@ -1,0 +1,32 @@
+{
+  "display": {
+    "title": {
+      "text": "The highest point",
+      "color": "dark_purple"
+    },
+    "description": {
+      "text": "Go to the top of the world"
+    },
+    "icon": {
+      "item": "minecraft:feather"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "y 319": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "position": {
+          "y": {
+            "min": 315,
+            "max": 450
+          }
+        }
+      }
+    }
+  },
+  "parent": "achievable:root"
+}

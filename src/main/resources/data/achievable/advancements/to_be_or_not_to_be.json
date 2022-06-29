@@ -1,0 +1,31 @@
+{
+  "display": {
+    "title": {
+      "text": "To be, or not to be?",
+      "color": "green"
+    },
+    "description": {
+      "text": "Acquire a skeleton skull"
+    },
+    "icon": {
+      "item": "minecraft:skeleton_skull"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "get skeleton skull": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": ["minecraft:skeleton_skull"]
+          }
+        ]
+      }
+    }
+  },
+  "parent": "achievable:root"
+}

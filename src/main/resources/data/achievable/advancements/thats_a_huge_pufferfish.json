@@ -1,0 +1,29 @@
+{
+  "display": {
+    "title": {
+      "text": "That's a HUGE Pufferfish!",
+      "color": "dark_purple"
+    },
+    "description": {
+      "text": "Kill an Elder Guardian"
+    },
+    "icon": {
+      "item": "minecraft:pufferfish"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "kill elder guardian": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "entity": {
+          "type": "minecraft:elder_guardian"
+        }
+      }
+    }
+  },
+  "parent": "achievable:root"
+}

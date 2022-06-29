@@ -1,0 +1,30 @@
+{
+  "display": {
+    "title": {
+      "text": "It's ALIVEEEEEE!",
+      "color": "green",
+      "bold": true
+    },
+    "description": {
+      "text": "Summon a Snow golem"
+    },
+    "icon": {
+      "item": "minecraft:carved_pumpkin"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "summon snow golem": {
+      "trigger": "minecraft:summoned_entity",
+      "conditions": {
+        "entity": {
+          "type": "minecraft:snow_golem"
+        }
+      }
+    }
+  },
+  "parent": "achievable:root"
+}

@@ -1,0 +1,35 @@
+{
+  "display": {
+    "title": {
+      "text": "Wet Stuff",
+      "color": "green"
+    },
+    "description": {
+      "text": "Fill a bucket with water"
+    },
+    "icon": {
+      "item": "minecraft:water_bucket"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "water_bucket": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": ["minecraft:water_bucket"]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [["water_bucket"]],
+  "rewards": {
+    "experience": 10
+  },
+  "parent": "achievable:root"
+}
