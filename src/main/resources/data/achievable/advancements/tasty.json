@@ -1,0 +1,27 @@
+{
+  "display": {
+    "title": {
+      "text": "Mmm... Tasty",
+      "color": "green"
+    },
+    "description": {
+      "text": "Eat something."
+    },
+    "icon": {
+      "item": "minecraft:apple"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "eat": {
+      "trigger": "minecraft:consume_item"
+    }
+  },
+  "rewards": {
+    "experience": 10
+  },
+  "parent": "achievable:root"
+}

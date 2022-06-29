@@ -1,0 +1,28 @@
+{
+  "display": {
+    "title": {
+      "text": "Achievable",
+      "color": "green",
+      "bold": true,
+      "italic": false,
+      "underlined": false,
+      "obfuscated": false
+    },
+    "description": {
+      "text": "Have the Achievable mod installed."
+    },
+    "icon": {
+      "item": "minecraft:target"
+    },
+    "frame": "task",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": false,
+    "background": "minecraft:textures/gui/advancements/backgrounds/stone.png"
+  },
+  "criteria": {
+    "mod installed": {
+      "trigger": "minecraft:tick"
+    }
+  }
+}

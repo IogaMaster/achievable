@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "id": "achievable",
+  "version": "${version}",
+
+  "name": "Achievable",
+  "description": "A mod to make playing minecraft a little more rewarding!",
+  "authors": ["IogaMaster"],
+  "contact": {},
+
+  "license": "MIT",
+  "icon": "assets/achievable/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": ["com.iogamaster.achievable.Achievable"]
+  },
+  "mixins": [],
+
+  "depends": {
+    "fabricloader": "",
+    "fabric": "*",
+    "minecraft": "1.18.x"
+  },
+  "suggests": {}
+}
